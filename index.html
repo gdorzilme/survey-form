@@ -21,25 +21,26 @@
         <main> 
 
             <h1 id="title">Mortgage Application Intake Form</h1>
-            <h3 id= "subtitle"><i>Helping families achieve their dream of homeownership</i></h3>
+            <p id= "description"><i>Helping families achieve their dream of homeownership</i></p>
             
             <form id="survey-form">
                  
                    <!--Mortgage Request Type radio buttons-->
                     <p>I'm interested in: </p>
                     <div>
-                        <label for="newhome">Purchasing a new Home </label>
-                        <input type="radio" name="mortgagetype" value="newhome" checked> 
+                        <label for="newhome" id="newhome-label">Purchasing a new Home </label>
+                        <input type="radio" name="mortgagetype" value="newhome" id= "newhome" checked>
+                        
                     </div>
 
                     <div>
-                        <label for="newhome">Refinancing my existing mortgage </label>
-                        <input type="radio" name="mortgagetype" value="refi"> 
+                        <label for="refi" id="refi-label">Refinancing my existing mortgage </label>
+                        <input type="radio" name="mortgagetype" value="refi" id="refi"> 
                     </div>
 
                     <div>
-                        <label for="newhome">Moving my mortgage to this institution </label>
-                        <input type="radio" name="mortgagetype" value="moving"> 
+                        <label for="moving" id= "moving-label">Moving my mortgage to this institution </label>
+                        <input type="radio" name="mortgagetype" value="moving" id="moving"> 
                     </div>
 
                  
@@ -47,25 +48,49 @@
                 <label for="name" id="name-label">Name </label>
                 <input type="text" id="name" placeholder= "Enter your full name" required> 
 
-               <label for="name" id="email-label">Email </label>
-               <input type="text" id="email" placeholder="Enter your email" required>  
+               <label for="email" id="email-label">Email </label>
+               <input type="email" id="email" placeholder="Enter your email" required>  
 
-               <label for="name" id="number-label" placeholder="Enter your mobile number">Cell Phone </label>
+               <label for="number" id="number-label" placeholder="Enter your mobile number">Cell Phone </label>
                <input type="tel" id="number" required>  
 
-               <label for="address" id="addresslabel">Current Address </label>
-               <input type="text" id="address" required>  
+               <label for="address" id="address-labenamel">Current Address </label>
+               <input type="text" id="address" >  
 
+               <label for="DOB" id= "DOB-label">Date of Birth </label>
+               <input type="date" id="DOB" > 
 
+               <label for="dropdown" id= "dropdown-label"> Marital Status  </label>
+               <select name="marital-status" id="dropdown"> 
+                    <option value="">Please select your marital status </option>
+                    <option value="married">Married </option> 
+                    <option value="single">Single</option>
+                    <option value="separated">Separated</option>
+                    <option value="divorced">Divorced </option>
+                    <option value="widowed">Widowed</option>
+                    <option value="commonlaw">Common Law </option>
+               </select> 
 
+               
+               <label for="income" id="income-label">Gross Income </label>
+               <input type="number" id="income" min="15000" max="1000000000" placeholder= "Enter your annual income" required> 
 
+               <p> Best time to call</p>
+               <label for="morning" id="morning-label"> Morning </label>
+               <input type="checkbox" name="best-time" value="morning" id="morning"> 
 
+               <label for="afternoon" id="afternoon-label"> Afternoon </label>
+               <input type="checkbox" name="best-time" value="afternoon" id="afternoon">
 
+               <label for="evening" id="evening-label"> Evening </label>
+               <input type="checkbox" name="best-time" value="evening" id="evening">
 
+               
+               <label for=" ">Feel free to add any additional comments </label> 
+               <textarea id="comments" name="comments" placeholder="Enter your comments here..."> 
+               </textarea>
 
-
-
-
+               <button type="submit" id="submit"> SUBMIT </button>
             </form> 
 
         </main>
