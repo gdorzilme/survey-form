@@ -19,10 +19,14 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <main> 
+            
+            <div class="container">>
 
+            <header class="header">
             <h1 id="title">Mortgage Application Intake Form</h1>
             <p id= "description"><i>Helping families achieve their dream of homeownership</i></p>
-            
+            </header>
+
             <form id="survey-form">
                  
                    <!--Mortgage Request Type radio buttons-->
@@ -51,14 +55,13 @@
                <label for="email" id="email-label">Email </label>
                <input type="email" id="email" placeholder="Enter your email" required>  
 
-               <label for="number" id="number-label" placeholder="Enter your mobile number">Cell Phone </label>
-               <input type="tel" id="number" required>  
+               <label for="number" id="number-label" >Age </label>
+               <input type="number" id="number" min="18" max="999" value="18" placeholder="Enter your mobile number" required>  
 
                <label for="address" id="address-labenamel">Current Address </label>
                <input type="text" id="address" >  
 
-               <label for="DOB" id= "DOB-label">Date of Birth </label>
-               <input type="date" id="DOB" > 
+             
 
                <label for="dropdown" id= "dropdown-label"> Marital Status  </label>
                <select name="marital-status" id="dropdown"> 
@@ -73,7 +76,7 @@
 
                
                <label for="income" id="income-label">Gross Income </label>
-               <input type="number" id="income" min="15000" max="1000000000" placeholder= "Enter your annual income" required> 
+               <input type="number" id="income" name="income" min="10" max="250000" value="20000" placeholder= "Enter your annual income" required> 
 
                <p> Best time to call</p>
                <label for="morning" id="morning-label"> Morning </label>
@@ -92,7 +95,7 @@
 
                <button type="submit" id="submit"> SUBMIT </button>
             </form> 
-
+        </div>
         </main>
        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
