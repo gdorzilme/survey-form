@@ -24,27 +24,42 @@
             <h3 id= "subtitle"><i>Helping families achieve their dream of homeownership</i></h3>
             
             <form id="survey-form">
-                 <div> 
+                 
                    <!--Mortgage Request Type radio buttons-->
                     <p>I'm interested in: </p>
-                    <label for="newhome">Purchasing a new Home </label>
-                    <input type="radio" name="newhome"> 
-                    <label for="refi">Refinancing my existing mortgage </label>
-                    <input type="radio" name="refi">
-                    <label for=" ">Moving my mortgage to this institution </label>
-                    <input type="radio" name="newhome">
-                </div> 
+                    <div>
+                        <label for="newhome">Purchasing a new Home </label>
+                        <input type="radio" name="mortgagetype" value="newhome" checked> 
+                    </div>
 
-                <label for="name">Name </label>
-                <input type="text" id="name" required> 
+                    <div>
+                        <label for="newhome">Refinancing my existing mortgage </label>
+                        <input type="radio" name="mortgagetype" value="refi"> 
+                    </div>
 
-               <label for="name">Email </label>
-               <input type="text" id="email" required>  
+                    <div>
+                        <label for="newhome">Moving my mortgage to this institution </label>
+                        <input type="radio" name="mortgagetype" value="moving"> 
+                    </div>
 
-               <label for="name">Cell Phone </label>
+                 
+
+                <label for="name" id="name-label">Name </label>
+                <input type="text" id="name" placeholder= "Enter your full name" required> 
+
+               <label for="name" id="email-label">Email </label>
+               <input type="text" id="email" placeholder="Enter your email" required>  
+
+               <label for="name" id="number-label" placeholder="Enter your mobile number">Cell Phone </label>
                <input type="tel" id="number" required>  
 
-               
+               <label for="address" id="addresslabel">Current Address </label>
+               <input type="text" id="address" required>  
+
+
+
+
+
 
 
 

@@ -4,3 +4,22 @@ body {
     font-family: 'Fira Sans Condensed', sans-serif;
 }
 
+#title {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#subtitle {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#survey-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
