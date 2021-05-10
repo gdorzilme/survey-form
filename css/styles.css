@@ -5,11 +5,16 @@
 sometimes in the html element  */
 body {
     font-family: 'Fira Sans Condensed', sans-serif;
+    
+    /*  
     background: url(../images/mortgage-app-background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
      background-size: cover;
+    */
+
+    background: linear-gradient(200deg, lightblue, blue);
 }
 
 #title {
