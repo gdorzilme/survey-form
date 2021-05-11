@@ -31,38 +31,45 @@
                  
                    <!--Mortgage Request Type radio buttons-->
                     <p>I'm interested in: </p>
-                    <div>
+                    <div class="form-group1">
                         <label for="newhome" id="newhome-label">Purchasing a new Home </label>
                         <input type="radio" name="mortgagetype" value="newhome" id= "newhome" checked>
                         
                     </div>
 
-                    <div>
+                    <div class="form-group1">
                         <label for="refi" id="refi-label">Refinancing my existing mortgage </label>
                         <input type="radio" name="mortgagetype" value="refi" id="refi"> 
                     </div>
 
-                    <div>
+                    <div class="form-group1">
                         <label for="moving" id= "moving-label">Moving my mortgage to this institution </label>
                         <input type="radio" name="mortgagetype" value="moving" id="moving"> 
                     </div>
 
                  
-
+            <div class="form-group2">
                 <label for="name" id="name-label">Name </label>
                 <input type="text" id="name" placeholder= "Enter your full name" required> 
+            </div> 
 
+            <div class="form-group2">
                <label for="email" id="email-label">Email </label>
                <input type="email" id="email" placeholder="Enter your email" required>  
+            </div>
 
+            <div class="form-group2">
                <label for="number" id="number-label" >Age </label>
                <input type="number" id="number" min="18" max="999" value="18" placeholder="Enter your mobile number" required>  
+            </div> 
 
-               <label for="address" id="address-labenamel">Current Address </label>
+            <div class="form-group2">
+               <label for="address" id="address-label">Current Address </label>
                <input type="text" id="address" >  
+            </div>
 
-             
-
+            
+            <div class="form-group3"> 
                <label for="dropdown" id= "dropdown-label"> Marital Status  </label>
                <select name="marital-status" id="dropdown"> 
                     <option value="">Please select your marital status </option>
@@ -73,30 +80,47 @@
                     <option value="widowed">Widowed</option>
                     <option value="commonlaw">Common Law </option>
                </select> 
-
-               
+            </div> 
+            
+            <div class="form-group3">
                <label for="income" id="income-label">Gross Income </label>
                <input type="number" id="income" name="income" min="10" max="250000" value="20000" placeholder= "Enter your annual income" required> 
+            </div> 
 
-               <p> Best time to call</p>
+            <p class="best-time-label"> When is the best time to call? </p>
+
+            <div class="form-group3">
+               
                <label for="morning" id="morning-label"> Morning </label>
                <input type="checkbox" name="best-time" value="morning" id="morning"> 
+            </div> 
 
+            <div class="form-group3">
                <label for="afternoon" id="afternoon-label"> Afternoon </label>
                <input type="checkbox" name="best-time" value="afternoon" id="afternoon">
+            </div> 
 
+            <div class="form-group3">
                <label for="evening" id="evening-label"> Evening </label>
                <input type="checkbox" name="best-time" value="evening" id="evening">
-
+            </div> 
                
-               <label for=" ">Feel free to add any additional comments </label> 
+            <div class="form-group3">
+               <label for="comments" id="comments-label">Feel free to add any additional comments </label> 
                <textarea id="comments" name="comments" placeholder="Enter your comments here..."> 
-               </textarea>
+               </textarea> 
+            </div>
 
+            <div class="form-group3">
                <button type="submit" id="submit"> SUBMIT </button>
+            </div>
+
             </form> 
         </div>
         </main>
+<<<<<<< HEAD
        
+=======
+>>>>>>> e38077b499494a60f50a00d9c9891be80feea049
     </body>
 </html>

@@ -1,25 +1,297 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
 
+
+/*perfect full width and centered background CSS code in the body element
+sometimes in the html element  */
 body {
     font-family: 'Fira Sans Condensed', sans-serif;
+    
+    /*  
+    background: url(../images/mortgage-app-background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+    */
+
+    background: linear-gradient(200deg, lightblue, blue);
 }
 
 #title {
+    font-family: 'Francois One', sans-serif;
+    font-size: 58px;
     display:flex;
     justify-content: center;
     align-items: center;
+    color: whitesmoke;
 }
 
+.container {
+    width: 100%;
+
+}
+
+.header {
+    padding: 25px;
+    margin-bottom: 2rem;
+
+}
+
+
 #description {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
     display:flex;
     justify-content: center;
     align-items: center;
+    color: whitesmoke;
 }
 
 #survey-form {
+    font-family: 'Merriweather', serif;
+    color: whitesmoke;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border-radius: 20px;
+    flex-direction: column;
+    width: 75%;
+    align-items: center;
+    font-weight: bold;
 }
+
+.form-group1 {
+
+    display:flex;
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+    
+}
+
+.form-group2 {
+    display:flex;
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+
+}
+
+.form-group3 {
+    display:flex;
+    
+
+}
+
+
+#newhome-label {
+
+
+}
+
+#refi-label {
+
+
+}
+
+#moving-label{
+
+
+}
+
+#newhome {
+
+
+}
+
+#refi {
+
+
+}
+
+#moving {
+
+    
+}
+
+/* Contact information */
+
+#name {
+    display: flex;
+    width: 300px;
+    height: 2.4rem;
+
+}
+
+#number {
+
+    display: flex;
+    width: 300px;
+    height: 2.4rem;
+}
+
+#email {
+    display: flex;
+    width: 300px;
+    height: 2.4rem;
+}
+
+#address {
+    display: flex;
+    width: 500px;
+    height: 2.4rem;
+}
+
+#name-label {
+    display: flex;
+    padding: 15px;  
+
+    
+}
+
+#number-label {
+    display: flex;
+    padding: 15px; 
+
+}
+
+#email-label {
+    display: flex;
+    padding: 15px; 
+    
+}
+
+#address-label {
+    display: flex;
+    padding: 15px; 
+}
+
+
+/* marital status */
+#dropdown {
+    display: flex;
+    margin: 10px;
+}
+
+#dropdown-label {
+    display: flex;
+    padding: 15px; 
+    
+}
+
+
+/*income  */
+
+#income {
+    display: flex;
+    margin: 10px;
+}
+
+#income-label {
+    display: flex;
+    padding: 15px; 
+}
+
+/* best time */
+.best-time-label {
+
+    display: flex;
+    padding-bottom: 1.5px; 
+    flex-direction: column;
+}
+
+#morning {
+    display: flex;
+    margin-bottom: 2px; 
+    
+}
+
+#afternoon {
+    display: flex;
+    margin-bottom: 2px; 
+    
+}
+
+#evening {
+    display: flex;
+    margin-bottom: 2px; 
+
+}
+
+#morning-label { 
+    display: flex;
+    padding-bottom: 15px; 
+    padding-right: 15px;
+
+}
+
+#afternoon-label {
+    display: flex;
+    padding-bottom: 10px; 
+    padding-right: 7.5px;
+
+}
+
+#evening-label {
+    display: flex;
+    padding-bottom: 15px; 
+    padding-right: 15px;
+
+}
+
+/* Additional comments */
+
+#comments {
+    display: flex;
+    width: 500px;
+    min-width: 100px;
+    margin-bottom: 10px;
+    resize: vertical;
+
+}
+
+#comments-label {
+    display: flex;
+    padding: 15px; 
+
+}
+
+#submit {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media (min-width: 480px) {
+
+    #title {
+        font-family: 'Francois One', sans-serif;
+        font-size: 58px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+    }
+
+    #description {
+        font-family: 'Merriweather', serif;
+        font-size: 25px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+    }
+
+#survey-form {
+    padding: 2.5rem;
+}
+}
+
+
 
 
